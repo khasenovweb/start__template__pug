@@ -1,0 +1,28 @@
+.mobile__nav {
+    position: absolute;
+    left: 0;
+    top: 76px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: translateY(10px);
+    opacity: 0;
+    &.active {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.mobile__nav__links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+    grid-gap: 10px;
+}
+.mobile__nav__link {
+    padding: 5px 0;
+    color: #1f1f1f;
+}

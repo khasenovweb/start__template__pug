@@ -1,0 +1,53 @@
+extends layouts/main.pug
+block content
+    //======================================================================
+    //============================= pk__header =============================
+    //======================================================================
+    section.pk__header
+        .container
+            .pk__header__links
+                a.pk__header__link(href="") 
+                    img.pk__header__link__icon(src="img/pk__header__icon.svg", alt="")
+                    | Главная
+                a.pk__header__link(href="")  Личный кабиент
+                a.pk__header__link(href="")  Администратор
+    //======================================================================
+    //========================= END pk__header =============================
+    //======================================================================
+
+    //======================================================================
+    //============================= pk__main ===============================
+    //======================================================================
+    section.pk__main
+        .container
+            .pk__main__sidebar
+                .pk__main__sidebar__links
+                    a.pk__main__sidebar__link.active(href="") Специалисты
+                    a.pk__main__sidebar__link(href="") База вопросов
+                    a.pk__main__sidebar__link(href="") Тесты
+                    a.pk__main__sidebar__link(href="") Результаты
+            .pk__main__content
+                img.pk__main__content__img(src="img/pk__main__content.jpeg", alt="")
+                .pk__main__content__login
+                    .pk__main__content__login__title Войти как
+                    .pk__main__content__login__roles
+                        label.pk__main__content__login__role(for="1")
+                            input#1(type="radio" name="loginrole")
+                            .pk__main__content__login__role__box
+                                .pk__main__content__login__role__box__icon(style="background-image: url(img/login-1.svg)")
+                                .pk__main__content__login__role__box__title Гость
+                        label.pk__main__content__login__role(for="2")
+                            input#2(type="radio" name="loginrole")
+                            .pk__main__content__login__role__box
+                                .pk__main__content__login__role__box__icon(style="background-image: url(img/login-2.svg)")
+                                .pk__main__content__login__role__box__title Администратор
+                        label.pk__main__content__login__role(for="3")
+                            input#3(type="radio" name="loginrole")
+                            .pk__main__content__login__role__box
+                                .pk__main__content__login__role__box__icon(style="background-image: url(img/login-3.svg)")
+                                .pk__main__content__login__role__box__title Инженер
+                    .pk__main__content__login__btn
+                        button.btn Войти
+    //======================================================================
+    //========================= END pk__main ===============================
+    //======================================================================

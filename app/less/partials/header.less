@@ -1,0 +1,25 @@
+.header {
+    background-color: #5d6067;
+    padding: 10px 0;
+}
+.header__hamburger {
+    width: 56px;
+    min-width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../img/hamburger.svg);
+    float: right;
+    margin-right: -14px;
+    opacity: 0;
+    &.active {
+        background-image: url(../img/hamburger__active.svg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header__hamburger {
+        opacity: 1;
+    }
+}
